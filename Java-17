@@ -1,0 +1,18 @@
+import javax.swing.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int number = Integer.parseInt(JOptionPane.showInputDialog("Please input a income or your monthly salary!"));
+
+        if (number > 100000)
+        {
+            System.out.println("You'll have to pay 30% in taxes for any of your buys!");
+        } else if (number <= 100000 && number >= 50000) {
+            System.out.println("You'll have to pay 20% in taxes for any of your buys!");
+        } else if (number < 50000) {
+            System.out.println("You'll have to pay 10% in taxes for any of your buys!");
+        }
+    }
+}
