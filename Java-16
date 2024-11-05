@@ -1,0 +1,35 @@
+import javax.swing.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int number_1 = Integer.parseInt(JOptionPane.showInputDialog("Please input a number!"));
+        int number_2 = Integer.parseInt(JOptionPane.showInputDialog("Please input another number!"));
+
+        if (number_1 > number_2)
+        {
+            System.out.println(number_1 + " is larger than " + number_2);
+        } else {
+            System.out.println(number_2 + " is larger than " + number_1);
+        }
+
+        if (number_1 > 0)
+        {
+            System.out.println("The number " + number_1 + " is positive!");
+        } else if (number_1 == 0) {
+            System.out.println("The number " + number_1 + " is equal to zero!");
+        } else if (number_1 < 0) {
+            System.out.println("The number " + number_1 + " is negative!");
+        }
+
+        if (number_2 > 0)
+        {
+            System.out.println("The number " + number_2 + " is positive!");
+        } else if (number_2 == 0) {
+            System.out.println("The number " + number_2 + " is equal to zero!");
+        } else if (number_2 < 0) {
+            System.out.println("The number " + number_2 + " is negative!");
+        }
+    }
+}
