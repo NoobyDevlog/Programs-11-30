@@ -1,0 +1,16 @@
+import javax.swing.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int number = Integer.parseInt(JOptionPane.showInputDialog("Please input your age!"));
+
+        if (number < 18)
+        {
+            System.out.println("Sorry, you're a minor! You aren't eligible to vote!");
+        } else {
+            System.out.println("You're an adult! You're eligible to vote!");
+        }
+    }
+}
