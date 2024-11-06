@@ -1,0 +1,15 @@
+number = int(input("What score did you get on the final exam? (from 1 to 10)"))
+
+while number < 1 or number > 10:
+    number = int(input("Invalid input"))
+
+if number == 10:
+    print("You got the perfect score! You got an A!")
+elif number < 10 and number >= 8:
+    print("Great work! You got a B!")
+elif number < 8 and number >= 6:
+    print("Good Job! You got a C!")
+elif number < 6 and number >= 4:
+    print("Regular! You got a D!")
+else:
+    print("Fail! You got a F!")
