@@ -1,0 +1,6 @@
+number = int(input("Please input your age!"))
+
+if number < 18:
+    print("Sorry, you're a minor! You aren't eligible to vote!")
+else:
+    print("You're an adult! You're eligible to vote!")
