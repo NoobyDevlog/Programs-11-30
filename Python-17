@@ -1,0 +1,8 @@
+number = int(input("Please input an income or your monthly salary!"))
+
+if number > 100000:
+    print("You'll have to pay 30% in taxes for any of your buys!")
+elif number <= 100000 and number >= 50000:
+    print("You'll have to pay 20% in taxes for any of your buys!")
+else:
+    print("You'll have to pay 10% in taxes for any of your buys!")
