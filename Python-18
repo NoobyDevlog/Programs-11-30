@@ -1,0 +1,13 @@
+number_1 = float(input("Please input your weight!"))
+number_2 = float(input("Please input your height!"))
+
+number = number_1 / number_2
+
+if number < 18.5:
+    print("You're Underweight!")
+elif number >= 18.5 and number < 24.9:
+    print("You have a Normal weight!")
+elif number >= 25 and number < 29.9:
+    print("You're Overweight!")
+else:
+    print("You're Obese!")
