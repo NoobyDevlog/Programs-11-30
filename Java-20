@@ -1,0 +1,31 @@
+import javax.swing.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        double number = Double.parseDouble(JOptionPane.showInputDialog("How many minutes did you use during this month on calls?"));
+
+        double charge = 10.0;
+
+        if (number >= 0 && number <= 100)
+        {
+            System.out.println("No additional charge! You have to pay only $" + charge);
+        } else if (number >= 101  && number <= 200) {
+            double extra1 = 0.50 * number;;
+            System.out.println("You'll have an $0.50 additional charge per minute! You'll have to pay $" + (charge + extra1));
+        } else if (number >= 201  && number <= 300) {
+            if (number > 250)
+            {
+                double extra2 = 0.75 * number;;
+                System.out.println("You'll have an $0.75 additional charge per minute with the extra fee! You'll have to pay $" + (charge + extra2 + 5));
+            } else {
+                double extra2 = 0.75 * number;;
+                System.out.println("You'll have an $0.75 additional charge per minute! You'll have to pay $" + (charge + extra2));
+            }
+        } else if (number > 300) {
+            double extra3 = 0.50 * number;;
+            System.out.println("You'll have an $1 additional charge per minute with the extra fee! You'll have to pay $" + (charge + extra3 + 5));
+        }
+    }
+}
