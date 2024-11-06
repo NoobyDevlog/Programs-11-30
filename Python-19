@@ -1,0 +1,10 @@
+number = int(input("How many units of electricity did you use this week?"))
+
+if number <= 100:
+    print("You'll have to pay $1 per unit!")
+elif number >= 101 and number <= 200:
+    print("You'll have to pay $1.5 per unit!")
+elif number >= 201 and number <= 300:
+    print("You'll have to pay $2 per unit!")
+else:
+    print("You'll have to pay $3 per unit!")
