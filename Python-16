@@ -18,4 +18,4 @@ if number_2 > 0:
 elif number_2 == 0:
     print("The number", number_2, "is equal to zero!")
 else:
-    print("The number", number_
+    print("The number", number_2, "is negative!")
