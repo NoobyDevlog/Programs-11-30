@@ -1,0 +1,23 @@
+import javax.swing.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        double number_1 = Double.parseDouble(JOptionPane.showInputDialog("Please input your weight!"));
+        double number_2 = Double.parseDouble(JOptionPane.showInputDialog("Please input your height!"));
+
+        double number = number_1 / number_2;
+
+        if (number < 18.5)
+        {
+            System.out.println("You're Underweight!");
+        } else if (number >= 18.5 && number < 24.9) {
+            System.out.println("You have a Normal weight!");
+        } else if (number >= 25 && number < 29.9) {
+            System.out.println("You're Overweight!");
+        } else if (number >= 30) {
+            System.out.println("You're Obese!");
+        }
+    }
+}
