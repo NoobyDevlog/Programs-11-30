@@ -1,0 +1,23 @@
+public class VideoGamesTester {
+    public static void main(String[] args) {
+        VideoGames myVideoGames = new VideoGames();
+
+        //Back when I first bought the nintendo Wii
+        myVideoGames.defaultVideGame();
+        System.out.println(myVideoGames);
+
+        //Two years later
+        myVideoGames.updateTimesPlayed(2);
+        System.out.println(myVideoGames);
+
+        //When I bought the nintendo switch
+        myVideoGames.updateGame("Super Mario Odyssey");
+        myVideoGames.updateConsole("Nintendo Switch");
+        myVideoGames.restartTimesPlayed();
+        System.out.println(myVideoGames);
+
+        //Three month later
+        myVideoGames.updateTimesPlayed(3);
+        System.out.println(myVideoGames);
+    }
+}
