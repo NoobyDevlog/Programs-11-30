@@ -1,0 +1,31 @@
+public class VideoGames {
+    private String name;
+    private String console;
+    private int timesPlayed;
+
+    public void defaultVideGame() {
+        this.name = "Super Mario Galaxy";
+        this.console = "Wii";
+        this.timesPlayed = 0;
+    }
+
+    public void updateTimesPlayed(int num) {
+        this.timesPlayed += num;
+    }
+
+    public void restartTimesPlayed() {
+        this.timesPlayed = 0;
+    }
+
+    public void updateGame(String name) {
+        this.name = name;
+    }
+
+    public void updateConsole(String console) {
+        this.console = console;
+    }
+
+    public String toString() {
+        return "Game name: " + name + ", console: " + console + ", number of games played: " + timesPlayed;
+    }
+}
