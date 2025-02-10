@@ -1,0 +1,49 @@
+public class Car {
+    private String brand;
+    private String model;
+    private int speed;
+
+    public Car(String brand, String model, int speed) {
+        this.brand = brand;
+        this.model = model;
+        this.speed = speed;
+    }
+
+    public Car(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+        this.speed = 0;
+    }
+
+    public void displayInformation() {
+        System.out.println("Brand: " + brand + ", Model: " + model + ", Speed: " + speed + " km/h");
+    }
+
+    public int speedUp() {
+        return speed += 10;
+    }
+
+    public int speedUp(int amount) {
+        return speed += amount;
+    }
+
+    public int curb() {
+        this.speed -= 10;
+
+        if (this.speed < 0) {
+            this.speed = 0;
+        }
+
+        return speed;
+    }
+
+    public int curb(int amount) {
+        this.speed -= amount;
+
+        if (this.speed < 0) {
+            this.speed = 0;
+        }
+
+        return speed;
+    }
+}
