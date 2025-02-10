@@ -1,0 +1,24 @@
+public class CarTester {
+    public static void main(String[] args) {
+        Car tucson = new Car("Hyundai", "Tucson 2023");
+
+        //My car before I go to work
+        tucson.displayInformation();
+
+        //I'm driving on a free street
+        tucson.speedUp(30);
+        tucson.displayInformation();
+
+        //The traffic light turns red
+        tucson.curb(30);
+        tucson.displayInformation();
+
+        //I'm in a 10 km/h limit street
+        tucson.speedUp();
+        tucson.displayInformation();
+
+        //I parked
+        tucson.curb();
+        tucson.displayInformation();
+    }
+}
