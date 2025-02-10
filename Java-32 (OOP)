@@ -20,11 +20,11 @@ public class Car {
     }
 
     public int speedUp() {
-        return speed += 10;
+        return this.speed += 10;
     }
 
     public int speedUp(int amount) {
-        return speed += amount;
+        return this.speed += amount;
     }
 
     public int curb() {
